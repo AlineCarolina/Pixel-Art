@@ -1,0 +1,28 @@
+.color {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+#color-palette {
+    display: inline-block;
+    width: 100%;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#red {
+    background-color: red;
+}
+
+#palevioletre {
+    background-color: palevioletred;
+}
+
+#purple {
+    background-color: purple;
+}
