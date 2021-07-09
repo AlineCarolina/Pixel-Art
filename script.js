@@ -1,2 +1,1 @@
-let color = document.querySelectorAll('.color');
-let colorSelected = document.getElementById(black)
+let colorSelected = document.getElementById('black').classList.add('selected');
