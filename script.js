@@ -9,11 +9,15 @@ paletaDeCores.addEventListener('click', function (event) {
 })
 
 const pixelBoard = document.getElementById('pixel-board');
+let corAtual = document.querySelector('.selected').style.backgroundColor;
 
 pixelBoard.addEventListener('click', function(event) {
     let pixelSelecionado = event.target;
-    pixelSelecionado.classList.add('pixelSelecionado')
+    pixelSelecionado.classList.add('pixelSelecionado');
 })
+
+pixelSelecionado.style.backgroundColor = corAtual ;
+
 
 
 
