@@ -3,21 +3,14 @@ corInicial.classList.add('selected');
 const paletaDeCores = document.querySelector('#color-palette');
 
 paletaDeCores.addEventListener('click', function (event) {
-    let corAtual = document.querySelector('.selected');
+    let corAtual = document.querySelector('.selected').style.backgroundColor;
     corAtual.classList.remove('selected');
     event.target.classList.add('selected');
 })
 
 const pixelBoard = document.getElementById('pixel-board');
-let corAtual = document.querySelector('.selected').style.backgroundColor;
 
-pixelBoard.addEventListener('click', function(event) {
+pixelBoard.addEventListener('click', function (event) {
     let pixelSelecionado = event.target;
     pixelSelecionado.classList.add('pixelSelecionado');
 })
-
-pixelSelecionado.style.backgroundColor = corAtual ;
-
-
-
-
