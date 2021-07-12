@@ -8,9 +8,12 @@ paletaDeCores.addEventListener('click', function (event) {
     event.target.classList.add('selected');
 })
 
-const pixels = document.querySelector('.linhaPixel');
+const pixelBoard = document.getElementById('pixel-board');
 
-pixels.addEventListener('click', function (event) {
-    event.target.classList.add('pixelSelected');
-    let pintar = document.getElementsByClassName('pixelSelected');
-}) 
+pixelBoard.addEventListener('click', function(event) {
+    let pixelSelecionado = event.target;
+    pixelSelecionado.classList.add('pixelSelecionado')
+})
+
+
+
