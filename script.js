@@ -6,9 +6,17 @@ paletaDeCores.addEventListener('click', function (event) {
     corAtual.classList.remove('selected');
     event.target.classList.add('selected');
 })
-const pixelBoard = document.getElementById('pixel-board');
 
-pixelBoard.addEventListener('click', function(event) {
-    let pixelSelecionado = event.target;
-    pixelSelecionado.classList.add('pixelSelecionado')
-})
+function pintar() {
+ 
+    const pixelBoard = document.getElementById('pixel-board');
+
+    pixelBoard.addEventListener('click', function(event) {
+        let pixelSelecionado = event.target.classList.add('pixelSelected');
+    }) 
+
+    let pintar = document.getElementsByClassName('pixelSelected');
+    for (let index = 0; index < pintar.length; index += 1) { const element = pintar[index];
+        element.style.backgroundColor = corAtual.style.backgroundColor;
+   }
+}
