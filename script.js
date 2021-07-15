@@ -27,7 +27,7 @@ function colorPixel() {
    function clear() {
      const pixel= document.querySelectorAll('.pixel');
      for(let index = 0; index < pixel.length; index +=1) {
-       pixel[index].style.backgroundColor = 'rgb(255, 255, 255)';
+       pixel[index].style.backgroundColor = 'white';
      }
    }
    function apagar() {
