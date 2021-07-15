@@ -24,13 +24,11 @@ function colorPixel() {
    }
 	}
    colorPixel(); 
-   function clear() {
-     const pixel= document.querySelectorAll('.pixel');
-     for(let index = 0; index < pixel.length; index +=1) {
-       pixel[index].style.backgroundColor = 'white';
-     }
+ let botaoLimpar = document.getElementById('clear-board')
+ function limpa() {
+   let toClear = document.getElementsByClassName('pixel');
+   for (let index = 0; index < toClear.length; index++) {
+     toClear[index].style.backgroundColor = 'white'
    }
-   function apagar() {
-     document.getElementById('clear-board').addEventListener('click', clear);
-   }
-   apagar()
+ }
+ botaoLimpar.addEventListener('click', limpa)
