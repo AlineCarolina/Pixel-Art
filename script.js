@@ -25,10 +25,12 @@ function colorPixel() {
 	}
    colorPixel(); 
  let botaoLimpar = document.getElementById('clear-board')
- function limpa() {
-   let toClear = document.getElementsByClassName('pixel');
-   for (let index = 0; index < toClear.length; index++) {
-     toClear[index].style.backgroundColor = 'white'
-   }
- }
- botaoLimpar.addEventListener('click', limpa)
+botaoLimpar.addEventListener('click', function (){
+  let pixel = document.querySelectorAll('.pixel');
+  for (let index = 0; index < pixel.length; index +=1 ) {
+    if (pixel[index].style.backgroundColor !== 'white') {
+      pixel[index].style.backgroundColor = 'white'
+    };
+    
+  }
+})
