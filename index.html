@@ -5,26 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixels Art</title>
-		<link rel="stylesheet" href="style.css">
+	  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<h1 id="title">Paleta de Cores</h1>
-	<table id="cores">
-		<tr>
-			<th>Black</th>
-			<th>Blue</th>
-			<th>Palevioletre</th>
-			<th>Purple</th>
-		</tr>
-	</table>
-	<div id="color-palette">
-		<div class="color" id="black"></div>
-		<div class="color" id="blue"></div>
-		<div class="color" id="red"></div>
-		<div class="color" id="purple"></div>
-	</div>
-	<div><button id="clear-board">Limpar</button></div>
-	<section id="pixel-board">
+	<tr id="color-palette">
+		<td><div class="color" id="black"></div></td>
+		<td><div class="color" id="blue"></div></td>
+		<td><div class="color" id="red"></div></td>
+		<td><div class="color" id="purple"></div></td>
+  </tr>
+	<div><button id="clear-board">Clear</button></div>
 		<div class="linhaPixel">
 			<div class="pixel"></div>
 			<div class="pixel"></div>
@@ -53,7 +44,7 @@
 			<div class="pixel"></div>
 			<div class="pixel"></div>
 		</div>
-		<div class="linhaPixel">
+    <div class="linhaPixel">
 			<div class="pixel"></div>
 			<div class="pixel"></div>
 			<div class="pixel"></div>
@@ -61,7 +52,6 @@
 			<div class="pixel"></div>
 		</div>
 
-	</section>
 </body>
 <script src="script.js"></script>
 </html>

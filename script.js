@@ -1,5 +1,5 @@
-function colorPalette(){
-  let square = document.querySelectorAll('.color');  
+function colorPalette() {
+  const square = document.querySelectorAll('.color');
   square[0].style.backgroundColor = 'black';
   square[1].style.backgroundColor = 'blue';
   square[2].style.backgroundColor = 'red';
@@ -7,24 +7,25 @@ function colorPalette(){
 }
 colorPalette();
 function changeFirstBlockToBlack() {
-  let firstSquare = document.querySelectorAll('.color');
+  const firstSquare = document.querySelectorAll('.color');
   firstSquare[0].style.backgroundColor = 'black';
 }
 changeFirstBlockToBlack();
 
 function firstBlack() {
-  let firstSquare = document.querySelectorAll('.color');
-  let corPreta = firstSquare[0].style.backgroundColor;
-    if(corPreta == 'black'){
-        firstSquare[0].classList.add('selected');
-    }
+  const firstSquare = document.querySelectorAll('.color');
+  const corPreta = firstSquare[0].style.backgroundColor;
+  if (corPreta === 'black') {
+    firstSquare[0].classList.add('selected');
+  }
 }
 firstBlack();
-function selecionaCor(){
-  let corSelecionada = document.querySelectorAll('.color');
-    for(let index = 0; index < corSelecionada.length; index += 1){
-      corSelecionada[index].addEventListener('click', function(){
-        if(corSelecionada[index].className != 'color selected'){
+
+function selecionaCor() {
+  const corSelecionada = document.querySelectorAll('.color');
+  for (let index = 0; index < corSelecionada.length; index += 1) {
+    corSelecionada[index].addEventListener('click', function () {
+      if ( corSelecionada[index].className != 'color selected' ) {
           corSelecionada[index].classList.add('selected');
             for(let indice = 0; indice < corSelecionada.length; indice += 1){
             if(indice != index){
