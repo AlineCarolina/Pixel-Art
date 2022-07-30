@@ -1,5 +1,8 @@
 body {
   text-align: center;
+  background-image: url('/images/6661603.jpg');
+  background-size: cover;
+  padding-top: 10vh;
 }
 
 .color {
@@ -12,33 +15,51 @@ body {
 }
 
 #color-palette {
-  display: flex;
   width: 100%;
 }
 
+#table-palette {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+
+#table-pixel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+}
+
+tr {
+  display: flex;
+  justify-content: center;
+}
+
 #blue {
-    background-color: blue;
+  background-color: blue;
 }
 
 #red {
-    background-color: red;
+  background-color: red;
 }
 
-#purple {
-    background-color: purple;
+#yellow {
+  background-color: yellow;
 }
 
 #black {
-    background-color: black;
+  background-color: black;
 }
 
 .pixel {
   display: table-cell;
   border: 1px solid black;
-  width: 40px;
-  height: 40px;
-  padding: 0%;
-  margin: 0%;
+  width: 20px;
+  height: 20px;
+  margin: 1px;
   background-color: white;
 }
 
@@ -50,4 +71,17 @@ body {
 #cores {
   display: inline-block;
   align-content: center;
+}
+
+#clear-board {
+  margin-bottom: 2%;
+}
+
+#pricipal-div {
+  margin-left: 35%;
+  margin-right: 35%;
+  border-radius: 20px;
+  background-color: aliceblue;
+  padding: 5%;
+  padding-top: 30px;
 }
