@@ -7,63 +7,26 @@
   <title>Pixels Art</title>
 	<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	<h1 id="title">Paleta de Cores</h1>
-
-  <table>
-    <tr id="color-palette">
-      <td class="color" id="black"></td>
-      <td class="color" id="blue"></td>
-      <td class="color" id="red"></td>
-      <td class="color" id="purple"></td>
-    </tr>
-  </table>
-
-  <div>
-    <button id="clear-board">Clear</button>
+  <div id="pricipal-div">
+    <h1 id="title">Paleta de Cores</h1>
+    <table id="table-palette">
+      <tr id="color-palette">
+        <td class="color" id="black"></td>
+        <td class="color" id="blue"></td>
+        <td class="color" id="red"></td>
+        <td class="color" id="yellow"></td>
+      </tr>
+    </table>
+    <div>
+      <button id="clear-board">Clear</button>
+    </div>
+    <label>
+      <input type="number" min="5" max="50" id="board-size" placeholder="5">
+      <button id="generate-board">Change size</button>
+    </label>
   </div>
-
-  <table>
-    <tr>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-    </tr>
-    <tr>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-    </tr>
-    <tr>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-    </tr>
-    <tr>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-    </tr>
-    <tr>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-    </tr>
-</table>
-
+  <table id="table-pixel"></table>
 </body>
-
 <script src="script.js"></script>
-
 </html>
