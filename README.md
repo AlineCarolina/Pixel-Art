@@ -19,8 +19,8 @@ To install and run the project you must have [Visual Studio Code](https://code.v
 Using the terminal, clone the project:
 
 ```
-$ git clone git@github.com:AlineCarolina/Project-PixelsArt-Trybe.git
-$ cd Project-PixelsArt-Trybe
+$ git clone git@github.com:AlineCarolina/Pixel-Art.git
+$ cd Pixel-Art
 ```
 
 Open a project and click Go Live on the status bar to turn the server on/off.
