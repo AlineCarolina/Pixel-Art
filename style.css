@@ -1,7 +1,7 @@
 body {
   text-align: center;
   background-image: url('/images/6661603.jpg');
-  background-size: cover;
+  background-size: contain;
   padding-top: 10vh;
 }
 

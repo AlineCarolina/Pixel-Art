@@ -1,6 +1,7 @@
 # Project PixelArt! 🎨​
 My first project using JavaScript!
 
+![image](/images/Captura%20de%20tela%20de%202022-07-30%2016-06-38.png)
 ---
 
 ## About the project
