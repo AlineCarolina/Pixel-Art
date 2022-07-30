@@ -6,6 +6,7 @@ function colorPalette() {
   square[3].style.backgroundColor = 'purple';
 }
 colorPalette();
+
 function changeFirstBlockToBlack() {
   const firstSquare = document.querySelectorAll('.color');
   firstSquare[0].style.backgroundColor = 'black';
@@ -38,23 +39,23 @@ function selecionaCor() {
 }
 selecionaCor();
 
-function pintaPixel(){
-    let clickToPaint = document.querySelectorAll('.pixel');
-    let pixelColor = document.querySelectorAll('.color');
-    
-    for(let index = 0; index < clickToPaint.length; index += 1){
-        clickToPaint[index].addEventListener('click', function(){
-            if(clickToPaint[index].className == 'pixel'){
-                clickToPaint[index].classList.add('select');
-            }
-            if(clickToPaint[index].className == 'pixel select'){
-                for(let indice = 0; indice < pixelColor.length; indice += 1){
-                    if(pixelColor[indice].className == 'color selected'){
-                        clickToPaint[index].style.backgroundColor = pixelColor[indice].style.backgroundColor;
-                    }
-                }
-            }
-        });
-    }
+function pintaPixel() {
+  const clickToPaint = document.querySelectorAll('.pixel');
+  const pixelColor = document.querySelectorAll('.color');
+
+  clickToPaint.forEach(item => {
+    item.addEventListener('click', event => {
+      if (item.className == 'pixel') {
+        item.classList.add('select');
+      }
+      if (item.className == 'pixel select') {
+        pixelColor.forEach(color => {
+          if (color.className == 'color selected') {
+            item.style.backgroundColor = color.style.backgroundColor;
+          }
+        })
+      }
+    })
+  })
 }
 pintaPixel();
